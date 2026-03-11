@@ -1,0 +1,24 @@
+{
+  "name": "test-teknis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:api": "cypress run --spec 'cypress/e2e/api-tests/**/*.cy.js'",
+    "cy:run:report": "npm run cy:run:api && npm run merge-reports",
+    "merge-reports": "npx mochawesome-merge cypress/results/*.json > cypress/results/report.json && npx marge cypress/results/report.json --reportDir cypress/results --reportFilename summary-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "API Testing with Cypress for Berijalan Techno Center Technical Test",
+  "devDependencies": {
+    "cypress": "^15.11.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^4.4.1",
+    "mochawesome-report-generator": "^6.3.2",
+    "xlsx": "^0.18.5"
+  }
+}
