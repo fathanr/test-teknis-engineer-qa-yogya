@@ -315,25 +315,4 @@ For GET Employees API test (TC05), if data mismatches are found:
 
 ---
 
-## Submission
-
-**Email to:** mutiaraceasagusta@berijalan.co.id
-**Subject:** TEST*AUTOMATION*[your name]
-
-**Attachments:**
-1. This project (ZIP format)
-2. Summary report (cypress/results/summary-report.html)
-3. Any additional documentation
-
----
-
-## Contact
-
-For questions or clarifications about this test project, please contact:
-- **Email:** mutiaraceasagusta@berijalan.co.id
-- **Position:** Automation Test Engineer
-- **Company:** Berijalan Techno Center
-
----
-
-*Generated for technical test submission*
+*Generated for technical test submission - Automation Test Engineer position*
