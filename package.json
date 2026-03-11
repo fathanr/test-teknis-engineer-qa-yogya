@@ -7,7 +7,11 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "cy:run:api": "cypress run --spec 'cypress/e2e/api-tests/**/*.cy.js'",
-    "cy:run:report": "npm run cy:run:api && npm run merge-reports",
+    "cy:run:ui": "cypress run --spec 'cypress/e2e/ui-tests/**/*.cy.js'",
+    "cy:run:all": "cypress run",
+    "cy:run:report": "npm run cy:run:all && npm run merge-reports",
+    "cy:run:api-report": "npm run cy:run:api && npm run merge-reports",
+    "cy:run:ui-report": "npm run cy:run:ui && npm run merge-reports",
     "merge-reports": "npx mochawesome-merge cypress/results/*.json > cypress/results/report.json && npx marge cypress/results/report.json --reportDir cypress/results --reportFilename summary-report"
   },
   "keywords": [],

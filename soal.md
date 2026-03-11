@@ -32,24 +32,22 @@ http://dummy.restapiexample.com/api/v1/employees
 
 ```json
 {
-  "status": "success",
-  "data": [
-    {
-      "id": "1",
-      "employee_name": "Tiger Nixon",
-      "employee_salary": "320800",
-      "employee_age": "61",
-      "profile_image": ""
-    },
-    {
-      "id": "2",
-      "employee_name": "Garrett Winters",
-      "employee_salary": "170750",
-      "employee_age": "63",
-      "profile_image": ""
-    }
-  ]
-}
+"status":"success",
+"data":[
+{
+"id":"1",
+"employee_name":"TigerNixon",
+"employee_salary":"320800",
+"employee_age":"61",
+"profile_image":""
+},
+{
+"id":"2",
+"employee_name":"Garrett Winters",
+"employee_salary":"170750",
+"employee_age":"63",
+"profile_image":""
+}]},
 ```
 
 ### Special Hints
@@ -77,7 +75,7 @@ https://fakestoreapi.com/products
 {
   "id": 0,
   "title": "string",
-  "price": 0,
+  "price": 0.1,
   "description": "string",
   "category": "string",
   "image": "http://example.com"
@@ -97,7 +95,9 @@ Gunakan data input **positive testing dan negative testing** dengan menggunakan 
 **Link**
 
 ```
-https://demo.opencart.com/
+
+https://demo.evershop.io/
+
 ```
 
 ---
@@ -107,9 +107,9 @@ https://demo.opencart.com/
 Tulis skrip Cypress untuk:
 
 1. Membuka homepage.
-2. Melakukan **create account**.
-3. Memastikan URL mengandung `/register`.
-4. Memastikan ada minimal **4 akun yang terbentuk**.
+2. Melakukan create account.
+3. Memastikan URL mengandung /register.
+4. Memastikan ada minimal 1 akun yang terbentuk.
 
 ---
 
@@ -117,34 +117,48 @@ Tulis skrip Cypress untuk:
 
 Tulis skrip Cypress untuk:
 
-1. Memilih produk dengan memfilter **Price range $12.00 sampai $19.00** dan **Color Yellow**.
-2. Melihat salah satu produk.
-3. Menambahkan produk ke keranjang dengan **Quantity 4**.
-4. Memverifikasi jumlah produk di **cart badge adalah 4**.
+1. Membuka kategori Accessories.
+2. Memilih produk dengan memfilter Price range $12.00 until $19.00, color Yellow.
+3. Melihat salah satu produk.
+4. Menambahkan produk ke keranjang dengan Quantity 4.
+5. Memverifikasi jumlah produk di cart badge adalah 4.
 
 ---
 
-## SOAL 3 — Mobile Viewport Test
+## Soal 3 - Hapus Produk dari Keranjang
 
 Tulis skrip Cypress untuk:
 
-1. Mengubah viewport ke **iPhone X**.
-2. Membuka homepage.
-3. Memastikan **tombol menu burger muncul**.
-
----
+1. Menambahkan 4 produk ke keranjang.
+2. Masuk ke halaman shopping cart.
+3. Menghapus semua produk tersebut.
+4. Memastikan teks Your cart is empty! muncul.
 
 ## SOAL 4 — Checkout Flow
 
 Tulis skrip Cypress untuk:
 
 1. Menambahkan produk ke keranjang.
-2. Mengisi form checkout dengan **data dummy**.
-3. Melanjutkan sampai halaman **Payment**.
-4. Memastikan URL mengandung `/checkout/payment`.
+2. Mengisi form checkout dengan data dummy.
+3. Melanjutkan sampai halaman Payment.
+4. Memastikan URL mengandung /checkout/payment.
+
+---
+
+## SOAL 5 — Mobile Viewport Test
+
+Tulis skrip Cypress untuk:
+
+1. Mengubah viewport ke iPhone X.
+2. Membuka homepage.
+3. Memastikan tombol menu burger muncul.
 
 **Note:** Lampirkan **summary report**.
 
 ---
 
 # THANK YOU
+
+```
+
+```

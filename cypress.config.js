@@ -5,7 +5,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       return require('./cypress/plugins/index.js')(on, config)
     },
-    baseUrl: 'http://dummy.restapiexample.com',
+    // baseUrl: 'http://dummy.restapiexample.com', // Removed - use full URLs in tests
     viewportWidth: 1280,
     viewportHeight: 720,
     video: false,
